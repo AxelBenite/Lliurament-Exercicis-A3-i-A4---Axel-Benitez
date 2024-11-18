@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <meta  charset="utf-8">
+        <title>Exercici 3</title>
+        <style>
+            body{background-color: green}
+            ol.numerica {list-style: decimal;}
+            ol.alfabetica {list-style: upper-alpha;}
+            ol.minuscula {list-style: lower-alpha;}
+            ol.romano_mayuscula {list-style: upper-roman;}
+            ol.romano_minuscula {list-style: lower-roman;}
+            div.separado {border-top: 0.1px solid; border-bottom: 0.1px solid; color: white;}
+            p.black {color:black}
+        </style>
+    </head>
+    <body>
+        <h4> A nested List:</h1>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <ul>
+                <li>Black Tea</li>
+                <li>Green Tea</li>
+                <ul>
+                    <li>China</li>
+                    <li>Africa</li>
+                </ul>
+            </ul>
+            <li>Milk</li>
+        </ul>
+        <dl>
+            <dt>Coffee</dt>
+            <dd> - black hot drink</dd>
+        </dl>
+        <dl>
+            <dt>Milk</dt>
+            <dd> - white cold drink</dd>
+        </dl>
+        <h4> Numbered list:</h4>
+        <ol class="numerica">
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Lemons</li>
+            <li>Oranges</li>
+        </ol>
+        <h4> Letters list:</h4>
+        <ol class="alfabetica">
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Lemons</li>
+            <li>Oranges</li>
+        </ol>
+        <h4>Lowercase letters list:</h4>
+        <ol class="minuscula">
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Lemons</li>
+            <li>Oranges</li>
+        </ol>
+        <h4>Roman numbers list:</h4>
+        <ol class="romano_mayuscula">
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Lemons</li>
+            <li>Oranges</li>
+        </ol>
+        <h4>Lowercase Roman number list:</h4>
+        <ol class="romano_minuscula">
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Lemons</li>
+            <li>Oranges</li>
+        </ol>
+        <div class="separado">
+            <p class="black">Link per enviar emails a una adreça determinada:</p>
+            <a href="https://www.google.com/search?q=a&oq=a&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTITCAEQLhiDARjHARixAxjRAxiABDINCAIQABiDARixAxiABDITCAMQLhiDARjHARixAxjRAxiABDINCAQQABiDARixAxiABDINCAUQABiDARixAxiABDINCAYQABiDARixAxiABDIKCAcQABixAxiABDIKCAgQABixAxiABNIBCTEzMzFqMGoxNagCBbACAQ&sourceid=chrome&ie=UTF-8">Enviar Email</a>
+            <p></p>
+        </div>
+        <h1> CREATE TABLE examples</h1>
+        <ul>
+            <li><a href="https://www.w3schools.com/sql/sql_create_table.asp">Basic CREATE TABLE statement</a></li>
+            <li><a href="https://dev.mysql.com/doc/refman/8.4/en/storage-engine-setting.html">Creating a table with a particular storage engine</a></li>
+            <li><a href="https://www.w3schools.com/sql/sql_autoincrement.asp">Creating a table with auto increment</a></li>
+            <li><a href="https://stackoverflow.com/questions/34418077/how-to-create-mysql-table-with-column-timestamp-default-current-date">Creating a table with the current timestamp</a></li>
+            <li><a href="https://dev.mysql.com/doc/refman/8.4/en/timestamp-initialization.html">Creating a table with TIMESTAMP DEFAULT NOW ()</a></li>
+            <li><a href="https://learn.microsoft.com/en-us/sql/relational-databases/tables/view-the-table-definition?view=sql-server-ver16">Viewing a table definition</a></li>
+        </ul>
+        <h1>Basic CREATE TABLE statement</h1>
+        <p></p>
+        <p>A very basic CREATE TABLE statement which should work in any SQL database:</p>
+        <ul>
+        <dt>mysql> CREATE TABLE example (</dt>
+        <dd>id INT,</dd>
+        <dd>data VARCHAR(100)</dd>
+        <dd>);</dd>
+        </ul>
+        <p>Query OK, 0 rows affected (0.03 sec)</p>
+
+        <h1>Creating a table with auto_increment</h1>
+        
+        <p>MySQL provides a variety of different table types with differing levels of functionality. The usual default, and most widely used, is MYISAM Other storage type must be explicity defined</p>
+        
+        <dt>mysql> CREATE TABLE example_innodb (</dt>
+        <dd>id INT,</dd>
+        <dd>data VARCHAR(100)</dd>
+        <dd>) TYPE=innodb;</dd>
+        <p>Query OK, 0 rows affected (0.03 sec)</p>
+
+        <p>Note that beginning with MySQL 4.1 ENGINE=innodb is the preferred method of defining the storage type.</p>
+        <p>Use SHOW CREATE TABLE (see <a href="https://es.wiktionary.org/wiki/below">below</a>) to check that MySql has created the table as you defined it.</p>
+    </body>
+</html>
